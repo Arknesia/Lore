@@ -5,8 +5,8 @@ import 'nextra-theme-docs/style.css'
  
 export const metadata = {
   title: {
-    default: 'Official Arknesia World',
-    template: '%s | Official Arknesia World'
+    default: 'Official Arknesia Lore',
+    template: '%s | Official Arknesia Lore'
   },
   metadataBase: new URL('https://arknesia.world'),
 }
@@ -21,19 +21,18 @@ export default async function RootLayout({ children }) {
         <Layout
           navbar={
             <Navbar
-              logo={<span style={{ fontWeight: 800 }}>Arknesia World</span>}
+              logo={<span style={{ fontWeight: 800 }}>Arknesia Lore</span>}
+              projectLink="https://github.com/Arknesia/Lore"
               chatLink="https://discord.gg/nqbNxtw5QZ"
             />
           }
           pageMap={await getPageMap()}
-          docsRepositoryBase="https://github.com/khisabkurniawn/arknesia-world/tree/main"
+          docsRepositoryBase="https://github.com/Arknesia/Lore/tree/main"
           nextThemes={{ disableTransitionOnChange: false, defaultTheme: 'dark' }}
           navigation={{ prev: false, next: false }}
           sidebar={{ toggleButton: false }}
           footer={<Footer />}
           darkMode={false}
-          editLink={null}
-          feedback={{ content: null }}
         >
           {children}
         </Layout>

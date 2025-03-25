@@ -1,9 +1,6 @@
 export default {
   index: "Introduction",
   stories: "Stories",
-  worldbuilding: {
-    title: "World Building",
-  },
   "*": {
     theme: {
       footer: false,
